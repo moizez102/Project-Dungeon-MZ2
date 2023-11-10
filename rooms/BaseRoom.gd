@@ -30,11 +30,12 @@ onready var _bridges := $bridges
 onready var _limits := $Limits
 onready var _mobs_spawners := $Mobs
 onready var _items_spawners := $Items
-onready var _spawner_robot := $SpawnerRobot
+onready var _spawner_robot := $queso
 onready var _spawner_teleporter := $SpawnerTeleporter
 
 
 func _ready() -> void:
+	#print(_spawner_robot)
 	# If we instantiate this room in another scene, we want the other scene to
 	# manage the robot and the teleporter.
 	#
@@ -72,6 +73,7 @@ func spawn_items() -> void:
 # Spawns the player character. This should be called by the parent scene, but
 # will be called by the room itself if it's run with F6.
 func spawn_robot() -> void:
+	#print(_spawner_robot)
 	_spawner_robot.spawn()
 
 
