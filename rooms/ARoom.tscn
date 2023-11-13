@@ -4,11 +4,14 @@
 
 [node name="ARoom" instance=ExtResource( 1 )]
 
+[node name="queso" parent="." index="0"]
+position = Vector2( 1109, 257 )
+
 [node name="Spawner_mob" parent="Mobs" index="0"]
-position = Vector2( 1227, 278 )
+position = Vector2( 301, 304 )
 
 [node name="Spawner_item" parent="Items" index="0"]
-position = Vector2( 715, 287 )
+position = Vector2( 702, 698 )
 
 [node name="SpawnerTeleporter" parent="." index="9"]
-position = Vector2( 957, 825 )
+position = Vector2( 960, 818 )

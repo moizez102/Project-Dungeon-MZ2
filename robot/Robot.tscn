@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://robot/Skin.gd" type="Script" id=1]
-[ext_resource path="res://robot/robot_sprites.png" type="Texture" id=2]
+[ext_resource path="res://robot/personaje.png" type="Texture" id=2]
 [ext_resource path="res://robot/SpellHolder.gd" type="Script" id=3]
 [ext_resource path="res://robot/pain_05.wav" type="AudioStream" id=4]
 [ext_resource path="res://robot/ShakingCamera2D.gd" type="Script" id=5]
@@ -258,8 +258,9 @@ tracks/0/keys = {
 [sub_resource type="CircleShape2D" id=4]
 radius = 51.0
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 19.0754
+[sub_resource type="CapsuleShape2D" id=17]
+radius = 13.0
+height = 44.0
 
 [sub_resource type="Gradient" id=14]
 offsets = PoolRealArray( 0, 0.083682, 0.171548, 0.544118, 0.872549 )
@@ -322,12 +323,14 @@ position = Vector2( 77, 0 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -20 )
 z_index = 2
-shape = SubResource( 1 )
+shape = SubResource( 17 )
 
 [node name="ShakingCamera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -40.5866 )
 current = true
+zoom = Vector2( 0.7, 0.7 )
 script = ExtResource( 5 )
 
 [node name="Shadow" parent="." instance=ExtResource( 7 )]
