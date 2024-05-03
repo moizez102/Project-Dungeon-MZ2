@@ -52,7 +52,7 @@ func generate_level() -> void:
 func _ready() -> void:
 	randomize() # without this, we would get the same random numbers on each run
 	_pause_screen.hide()
-	_music_player.play()
+	#_music_player.play()
 	generate_level()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta: float) -> void:

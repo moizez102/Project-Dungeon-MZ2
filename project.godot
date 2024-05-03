@@ -92,7 +92,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Learn to Code: final game project - start"
+config/name="Learn to Code: final game project - MZ2"
 config/icon="res://icon.png"
 
 [autoload]
